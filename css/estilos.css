@@ -1,0 +1,173 @@
+*{
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+    font-family: 'Odor Mean Chey', serif;
+}
+
+/*Tamaño Escritorio*/
+
+/*style body*/
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #aa66d3, #b375d8, #bc85de, #c594e3, #cea3e8, #d3abeb, #d7b2ed, #dcbaf0, #ddbcf1, #debef1, #dfc0f2, #e0c2f2);
+}
+
+/*seccion grilla*/
+
+.grid{
+    display: grid;
+    grid-template-rows: auto;
+    height: 100vh;
+}
+
+/*estilo header*/
+
+.cabeza{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 10%;
+    display: flex;
+
+}
+
+.imgLogo{
+    transition: transform .5s;
+    width: 100%;
+}
+.imgLogo:hover{
+    transform: rotate(360deg);
+}
+
+.navegador{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu{
+    display: flex; 
+}
+
+.lista{
+    display: flex;
+    margin-right: 4rem;
+}
+
+.anclas{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.anclas:hover{
+    transform: scale(1.5,1.5);
+    background-color: #aa66d3;
+}
+
+/*seccion principal*/
+
+
+/*seccion pie de pagina*/
+
+.pie{
+    text-align: center;
+    background-color: rgba(149, 88, 206, 0.119);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/*seccion de servicios*/
+
+/*.container{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+}*/
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 1px black;
+}
+
+.parrafoCard{
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 1rem;
+}
+
+/*galeria*/
+
+.galeria{
+    height: 80vh;
+    margin: 0 auto;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.imagenesGaleria{
+    width: 16.6%;
+    height: 50%;
+    border: solid 1px black ;
+    object-fit: cover;
+}
+
+
+/*pagina de contacto*/
+
+.contactoPrincipal{
+    display:flex;
+}
+
+.ubicacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width: 50%;
+}
+
+
+.formulario{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.mapas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+i{
+    font-size: 1.5em;
+    color: #aa66d3;
+}
+
+
+
+
+    
+
