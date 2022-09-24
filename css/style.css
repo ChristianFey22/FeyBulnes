@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #aa66d3, #b375d8, #bc85de, #c594e3, #cea3e8, #d3abeb, #d7b2ed, #dcbaf0, #ddbcf1, #debef1, #dfc0f2, #e0c2f2);
+    font-family: 'Odor Mean Chey', serif;
+}
+
+/*estilos del header*/
+
+.backG{
+    background-color: #6e056a82;
+}
+
+
+
+.ancla{
+    color: #6e056a;
+    font-size: 1.5rem;
+    transition: .12s;
+}
+.ancla:hover{
+    color: #cb1fc6;
+    transform: scale(1.2,1.2);
+}
+
+/*estilos del main*/
+
+.principal{
+    color: #6e056a;
+}
+
+
+
+/*estilos del footer*/
+
+.footer{
+    color: #6e056a;
+}
+
+.colorIcon{
+    color: #6e056a;
+    transition: .12s;
+}
+.colorIcon:hover{
+    color: #cb1fc6;
+}
+
+/*estilo de la pagina de servicio*/
+
+.borderSolid{
+    border: #6e056a72 solid 1.5px;
+    border-radius: 30%
+}
+
+.estiloSer{
+    margin-bottom: 3.5rem;
+    transition: transform .12s; background-color: 2s;
+}
+
+.estiloSer:hover{
+    transform: scale(1.1,1.1);
+    background-color: #6e056a36;
+}
+  
+/*estilo responsivo*/
+
+@media screen and (max-width: 1077px) {
+    .logo{
+        display: none;
+    }
+      
+}
+
+
+
+

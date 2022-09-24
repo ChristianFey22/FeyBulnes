@@ -9,7 +9,7 @@
 
 /*style body*/
 
-body{
+.cuerpo{
     width: 100vw;
     height: 100vh;
     background-image: linear-gradient(to bottom, #aa66d3, #b375d8, #bc85de, #c594e3, #cea3e8, #d3abeb, #d7b2ed, #dcbaf0, #ddbcf1, #debef1, #dfc0f2, #e0c2f2);
@@ -19,8 +19,8 @@ body{
 
 .grid{
     display: grid;
-    grid-template-rows: auto;
-    height: 100vh;
+    grid-template-rows: 20% auto 10%;
+    height:100vh;
 }
 
 /*estilo header*/
@@ -80,6 +80,10 @@ body{
     text-align: center;
     background-color: rgba(149, 88, 206, 0.119);
 }
+i{
+    font-size: 1.5em;
+    color: #aa66d3;
+}
 
 a{
     text-decoration: none;
@@ -113,21 +117,6 @@ a{
 
 /*galeria*/
 
-.galeria{
-    height: 80vh;
-    margin: 0 auto;
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-.imagenesGaleria{
-    width: 16.6%;
-    height: 50%;
-    border: solid 1px black ;
-    object-fit: cover;
-}
 
 
 /*pagina de contacto*/
@@ -160,14 +149,3 @@ a{
     align-items: center;
     padding: 10px;
 }
-
-i{
-    font-size: 1.5em;
-    color: #aa66d3;
-}
-
-
-
-
-    
-
