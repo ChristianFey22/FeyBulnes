@@ -2,28 +2,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Odor Mean Chey', serif;
 }
 
-body{
-    width: 100vw;
-    height: 100vh;
-    background-image: linear-gradient(to bottom, #aa66d3, #b375d8, #bc85de, #c594e3, #cea3e8, #d3abeb, #d7b2ed, #dcbaf0, #ddbcf1, #debef1, #dfc0f2, #e0c2f2);
-    font-family: 'Odor Mean Chey', serif;
+/*estilos body*/
+
+.colorText{
+    color: #dcadd4;
 }
 
 /*estilos del header*/
 
 .backG{
-    background-color: #6e056a82;
+    background-color: #dcadd455; /*fondo footer*/
 }
 
-
+.logo{
+    width: 20%;
+}
 
 .ancla{
-    color: #6e056a;
+    color: #dcadd4;
     font-size: 1.5rem;
     transition: .12s;
 }
+
 .ancla:hover{
     color: #cb1fc6;
     transform: scale(1.2,1.2);
@@ -31,22 +34,72 @@ body{
 
 /*estilos del main*/
 
-.principal{
-    color: #6e056a;
+.videoIndex{
+    filter: brightness(50%);
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-60%) translateY(-55%);
+    z-index: -1;
 }
 
+.videoServicio{
+    filter: brightness(50%);
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-60%) translateY(-55%);
+    z-index: -1;
+}
 
+.videoCurso{
+    filter: brightness(50%);
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-40%) translateY(-50%);
+    z-index: -1;
+}
+
+.videoGaleria{
+    filter: brightness(50%);
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+}
+
+.videoContacto{
+    filter: brightness(50%);
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-55%) translateY(-55%);
+    z-index: -1;
+}
+
+.borroso{
+    backdrop-filter: blur(5px);
+}
 
 /*estilos del footer*/
 
-.footer{
-    color: #6e056a;
-}
-
 .colorIcon{
-    color: #6e056a;
+    color: #dcadd4;
     transition: .12s;
 }
+
 .colorIcon:hover{
     color: #cb1fc6;
 }
@@ -68,15 +121,72 @@ body{
     background-color: #6e056a36;
 }
   
+/*estilos galeria*/
+
+.cover{
+    object-fit: cover;
+}
+
+.filtro{
+    filter: brightness(50%);
+}
+
+.imgHover{
+    transition: all 2s;
+}
+
+.imgHover:hover{
+    filter: brightness(100%);
+    transform: scale(1.1);
+    overflow: hidden;
+    cursor: zoom-in;
+}
+
+.imgHover:click{
+    filter: brightness(100%);
+    transform: scale(1.5);
+    cursor: zoom-in;
+}
+
+/*estilos contacto*/
+
+.bordes{
+    border: solid violet 1px;
+    box-shadow: 0 0 10px #cb1fc6;
+}
+
+.boton{
+    background-color: #cb1fc6;
+}
+
+
 /*estilo responsivo*/
 
 @media screen and (max-width: 1077px) {
     .logo{
         display: none;
     }
-      
+} 
+
+@media screen and (max-width: 768px) {
+
+    ul{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    li{
+        text-align: center;
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-bottom: solid 1px #cb1fc6;
+
+    }
 }
+    
+
+    
 
 
-
-
+ 
