@@ -11,6 +11,8 @@
     color: #dcadd4;
 }
 
+
+
 /*estilos del header*/
 
 .backG{
@@ -34,40 +36,7 @@
 
 /*estilos del main*/
 
-.videoIndex{
-    filter: brightness(50%);
-    position: fixed;
-    min-width: 100%;
-    min-height: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-60%) translateY(-55%);
-    z-index: -1;
-}
-
-.videoServicio{
-    filter: brightness(50%);
-    position: fixed;
-    min-width: 100%;
-    min-height: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-60%) translateY(-55%);
-    z-index: -1;
-}
-
-.videoCurso{
-    filter: brightness(50%);
-    position: fixed;
-    min-width: 100%;
-    min-height: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-40%) translateY(-50%);
-    z-index: -1;
-}
-
-.videoGaleria{
+.imgFondo{
     filter: brightness(50%);
     position: fixed;
     min-width: 100%;
@@ -76,18 +45,10 @@
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     z-index: -1;
+    object-fit: cover;
+
 }
 
-.videoContacto{
-    filter: brightness(50%);
-    position: fixed;
-    min-width: 100%;
-    min-height: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-55%) translateY(-55%);
-    z-index: -1;
-}
 
 .borroso{
     backdrop-filter: blur(5px);
@@ -120,6 +81,11 @@
     transform: scale(1.1,1.1);
     background-color: #6e056a36;
 }
+
+
+/*estilos cursos*/
+
+
   
 /*estilos galeria*/
 
@@ -162,6 +128,8 @@
 
 /*estilo responsivo*/
 
+
+
 @media screen and (max-width: 1077px) {
     .logo{
         display: none;
@@ -170,14 +138,14 @@
 
 @media screen and (max-width: 768px) {
 
-    ul{
+    .listaDesordenada{
         flex-direction: column;
-        width: 100%;
+        width: 100vw;
     }
 
-    li{
+    .listaItem{
         text-align: center;
-        width: 100%;
+        width: 100vw;
         padding-top: 5px;
         padding-bottom: 5px;
         border-bottom: solid 1px #cb1fc6;
