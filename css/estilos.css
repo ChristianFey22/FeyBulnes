@@ -1,151 +1,160 @@
 *{
-    box-sizing: border-box;
-    margin: 0; 
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Odor Mean Chey', serif;
 }
 
-/*Tamaño Escritorio*/
+/*estilos body*/
 
-/*style body*/
-
-.cuerpo{
-    width: 100vw;
-    height: 100vh;
-    background-image: linear-gradient(to bottom, #aa66d3, #b375d8, #bc85de, #c594e3, #cea3e8, #d3abeb, #d7b2ed, #dcbaf0, #ddbcf1, #debef1, #dfc0f2, #e0c2f2);
+.colorText{
+    color: #dcadd4;
 }
 
-/*seccion grilla*/
 
-.grid{
-    display: grid;
-    grid-template-rows: 20% auto 10%;
-    height:100vh;
-}
 
-/*estilo header*/
+/*estilos del header*/
 
-.cabeza{
-    display: flex;
-    justify-content: space-between;
+.backG{
+    background-color: #dcadd455; /*fondo footer*/
 }
 
 .logo{
-    width: 10%;
-    display: flex;
-
+    width: 20%;
 }
 
-.imgLogo{
-    transition: transform .5s;
-    width: 100%;
-}
-.imgLogo:hover{
-    transform: rotate(360deg);
-}
-
-.navegador{
-    width: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.menu{
-    display: flex; 
-}
-
-.lista{
-    display: flex;
-    margin-right: 4rem;
-}
-
-.anclas{
-    text-decoration: none;
-    color: black;
+.ancla{
+    color: #dcadd4;
     font-size: 1.5rem;
+    transition: .12s;
 }
 
-.anclas:hover{
-    transform: scale(1.5,1.5);
-    background-color: #aa66d3;
+.ancla:hover{
+    color: #cb1fc6;
+    transform: scale(1.2,1.2);
 }
 
-/*seccion principal*/
+/*estilos del main*/
 
+.imgFondo{
+    filter: brightness(50%);
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+    object-fit: cover;
 
-/*seccion pie de pagina*/
-
-.pie{
-    text-align: center;
-    background-color: rgba(149, 88, 206, 0.119);
-}
-i{
-    font-size: 1.5em;
-    color: #aa66d3;
-}
-
-a{
-    text-decoration: none;
-    color: black;
 }
 
 
-/*seccion de servicios*/
-
-.container{
-   display: flex;
-   flex-direction: row;
-   justify-content: space-evenly;
+.borroso{
+    backdrop-filter: blur(5px);
 }
 
-.card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    border: solid 1px black;
+/*estilos del footer*/
+
+.colorIcon{
+    color: #dcadd4;
+    transition: .12s;
 }
 
-.parrafoCard{
-    font-size: 1rem;
-    line-height: 2rem;
-    font-weight: 400;
-    text-align: center;
-    padding: 1rem;
+.colorIcon:hover{
+    color: #cb1fc6;
 }
 
-/*galeria*/
+/*estilo de la pagina de servicio*/
 
-
-
-/*pagina de contacto*/
-
-.contactoPrincipal{
-    display:flex;
+.borderSolid{
+    border: #6e056a72 solid 1.5px;
+    border-radius: 30%
 }
 
-.ubicacion{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-    width: 50%;
+.estiloSer{
+    margin-bottom: 3.5rem;
+    transition: transform .12s; background-color: 2s;
+}
+
+.estiloSer:hover{
+    transform: scale(1.1,1.1);
+    background-color: #6e056a36;
 }
 
 
-.formulario{
-    display: flex;
-    width: 50%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
+/*estilos cursos*/
+
+
+  
+/*estilos galeria*/
+
+.cover{
+    object-fit: cover;
 }
 
-.mapas{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+.filtro{
+    filter: brightness(50%);
 }
+
+.imgHover{
+    transition: all 2s;
+}
+
+.imgHover:hover{
+    filter: brightness(100%);
+    transform: scale(1.1);
+    overflow: hidden;
+    cursor: zoom-in;
+}
+
+.imgHover:click{
+    filter: brightness(100%);
+    transform: scale(1.5);
+    cursor: zoom-in;
+}
+
+/*estilos contacto*/
+
+.bordes{
+    border: solid violet 1px;
+    box-shadow: 0 0 10px #cb1fc6;
+}
+
+.boton{
+    background-color: #cb1fc6;
+}
+
+
+/*estilo responsivo*/
+
+
+
+@media screen and (max-width: 1077px) {
+    .logo{
+        display: none;
+    }
+} 
+
+@media screen and (max-width: 768px) {
+
+    .listaDesordenada{
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .listaItem{
+        text-align: center;
+        width: 100vw;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-bottom: solid 1px #cb1fc6;
+
+    }
+}
+    
+
+    
+
+
+ 
