@@ -1,0 +1,29 @@
+$color-primario: #dcadd4;
+$color-secundario: #cb1fc6;
+
+$border-solid: 1px solid #cb1fc6;
+
+$filtro-primario: brightness(50%);
+$filtro-secundario: brightness(100%);
+
+
+$tipografia-general: 'Odor Mean Chey', serif;
+
+/*maps*/
+
+$estilos:(
+    "width20": 20%,
+    "top50": 50%,
+    "left50": 50%,
+    "object": cover,
+);
+
+$min-width-height:(
+    "min-w": min-width 100%,
+    "min-h": min-height 100%,
+);
+
+$padding-top-bottom:(
+    "padding-top": padding-top 5px,
+    "padding-bottom": padding-bottom 5px,
+);

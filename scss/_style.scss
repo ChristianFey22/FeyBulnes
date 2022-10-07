@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $tipografia-general;
+}
+
+.colorText{
+    color: $color-primario;
+}
+
+.backG{
+    background-color: #dcadd455;
+    .logo{
+        width: map-get($estilos, width20);
+    }
+    .ancla{
+        color: $color-primario;
+        font-size: 1.2rem;
+        transition: .12s;
+        &:hover{
+            color: $color-secundario;
+            transform: scale(1.2,1.2);
+        }
+    }
+}
+
+.imgFondo{
+    filter: $filtro-primario;
+    position: fixed;
+    @include min-width-height;
+    top:map-get($estilos, top50);
+    left: map-get($estilos, left50);
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+    object-fit: map-get($estilos, object);
+}
+
+.borroso{
+    backdrop-filter: blur(5px);
+}
+
+.colorIcon{
+    color: $color-primario;
+    transition: .12s;
+    &:hover{
+        color: $color-secundario;
+    }
+}
+
+.borderSolid{
+    border: #6e056a72 solid 1.5px;
+    border-radius: 30%;
+}
+.estiloSer{
+    margin-bottom: 3.5rem;
+    transition: transform 1s; background-color: 2s;
+    &:hover{
+        transform: scale(1.1,1.1);
+        background-color: #6e056a36;
+    }
+}
+
+.cover{
+    object-fit: map-get($estilos, object);
+}
+
+.filtro{
+    filter: $filtro-primario;
+}
+
+.imgHover{
+    transition: all 2s;
+    &:hover{
+        filter: $filtro-secundario;
+        transform: scale(1.1);
+        overflow: hidden;
+        cursor: zoom-in;
+    }
+    &:click{
+        filter: $filtro-secundario;
+        transform: scale(1.5);
+        cursor: zoom-in;
+    }
+}
+
+.bordes{
+    border: $border-solid;
+    box-shadow: 0 0 10px $color-secundario;
+}
+
+.boton{
+    background-color: $color-secundario;
+}
+
+/*estilo responsivo*/
+
+@media screen and (max-width: 1077px) {
+    .logo{
+        display: none;
+    }
+} 
+
+@media screen and (max-width: 768px) {
+
+    .listaDesordenada{
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .listaItem{
+        text-align: center;
+        width: 100vw;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-bottom: $border-solid;
+
+    }
+}
