@@ -1,9 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 /*maps*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Odor Mean Chey", serif; }
+  font-family: "Poppins", sans-serif; }
 
 .colorText {
   color: #dcadd4; }
@@ -45,12 +46,11 @@
   border-radius: 30%; }
 
 .estiloSer {
+  background-color: #6e056a36;
   margin-bottom: 3.5rem;
-  transition: transform 1s;
-  background-color: 2s; }
+  transition: transform 1s; }
   .estiloSer:hover {
-    transform: scale(1.1, 1.1);
-    background-color: #6e056a36; }
+    transform: scale(1.1, 1.1); }
 
 .cover {
   object-fit: cover; }
